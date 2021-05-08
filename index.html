@@ -4,16 +4,21 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      href="https://puzzlestream.com/images/blank-sudoku-grid.png"
+      type="image/x-icon"
+    />
     <link rel="stylesheet" href="./index.css" />
     <title>Sudoku Solver</title>
   </head>
   <body>
-    <h2>SUDOKU V1</h2>
+    <h2>SUDOKU SOLVER V1</h2>
     <br />
 
     <div>
-      <div>
-        <table border="1" class="Sudoku">
+      <div class="SudokuContainer">
+        <table class="Sudoku">
           <tbody id="sudoku">
             <tr>
               <td>
@@ -280,24 +285,24 @@
         </table>
       </div>
       <div>
-        <label for="board">Enter your puzzle here !!</label>
+        <label for="board"> Enter your puzzle here ✍ !!</label>
         <br />
         <br />
         <textarea
           name="board"
           id="board"
-          cols="30"
+          cols="20"
           rows="10"
           style="resize: none"
           placeholder="Puzzle should be like..
-0 4 0 0 0 0 1 7 9 
-0 0 2 0 0 8 0 5 4 
-0 0 6 0 0 5 0 0 8 
-0 8 0 0 7 0 9 1 0 
-0 5 0 0 9 0 0 3 0 
-0 1 9 0 6 0 0 4 0 
-3 0 0 4 0 0 7 0 0 
-5 7 0 1 0 0 2 0 0 
+ 0 4 0 0 0 0 1 7 9 
+ 0 0 2 0 0 8 0 5 4 
+ 0 0 6 0 0 5 0 0 8 
+ 0 8 0 0 7 0 9 1 0 
+ 0 5 0 0 9 0 0 3 0 
+ 0 1 9 0 6 0 0 4 0 
+ 3 0 0 4 0 0 7 0 0 
+ 5 7 0 1 0 0 2 0 0 
 9 2 8 0 0 0 0 6 0"
         ></textarea>
         <br />

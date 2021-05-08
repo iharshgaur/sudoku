@@ -1,5 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+* {
+  font-family: "Nunito", sans-serif;
+}
 body {
   text-align: center;
+  padding: 0;
+  margin: 0;
+  background: url("./Gradient Wave.png");
+}
+h2 {
+  background-color: transparent;
+  color: white;
+  height: 80px;
+  margin-top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
 }
 body > div {
   display: flex;
@@ -17,10 +34,11 @@ body > div > div:nth-child(2) {
 }
 
 .Sudoku {
-  width: 450px;
-  height: 450px;
+  max-width: 450px;
+  max-height: 450px;
   border-radius: 5px;
 }
+
 td {
   width: 40px;
   height: 40px;
@@ -36,9 +54,98 @@ td > input {
 
 table {
   border: 1px solid grey;
-  background-color: azure;
+  background-color: #8acfc896;
 }
 textarea {
   text-align: center;
   padding: 5%;
+  border: 2px solid coral;
+  border-radius: 5px;
+}
+
+footer {
+  color: grey;
+  font-size: 12px;
+}
+
+label {
+  font-size: 22px;
+  color: white;
+}
+
+button {
+  height: 30px;
+  border: none;
+  background: rgb(250, 250, 250);
+  border-radius: 3px;
+  font-size: 15px;
+  font-weight: bold;
+  transition: 0.2s;
+  padding: auto;
+}
+button:active {
+  transition: 0.2s;
+  transform: scale(0.9);
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  body > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  body > div > div:nth-child(1) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+  }
+  body > div > div:nth-child(2) {
+    margin: 10px;
+    width: 80%;
+  }
+  .Sudoku {
+    border-radius: 5px;
+  }
+
+  td {
+    width: 15px;
+    height: 15px;
+    text-align: center;
+    font-size: 15px;
+    border: none;
+    border-radius: 5px;
+  }
+  td > input {
+    width: 15px;
+    height: 15px;
+    text-align: center;
+    font-size: 15px;
+    border-radius: 5px;
+  }
+  tr {
+    border-radius: 5px;
+  }
+  table {
+    border: 1px solid grey;
+    border-radius: 5px;
+    background-color: rgb(16, 138, 138);
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
 }
